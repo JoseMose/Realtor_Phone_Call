@@ -1,4 +1,4 @@
-import requests
+cd backend && source venv/bin/activate && python add_demo_data.pyimport requests
 import json
 
 # Your Render backend URL
