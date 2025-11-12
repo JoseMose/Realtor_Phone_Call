@@ -9,7 +9,7 @@ class Client(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
     phone = Column(String, unique=True, index=True)
-    email = Column(String, index=True)
+    email = Column(String, nullable=True, index=True)
 
     calls = relationship("Call", back_populates="client")
     feedbacks = relationship("Feedback", back_populates="client")
